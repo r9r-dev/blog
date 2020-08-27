@@ -1,5 +1,5 @@
 baseURL = "https://blog.r9r.dev/"
-languageCode = "fr-fr"
+languageCode = "en-us"
 title = "code :: sys :: hard :: gaming"
 theme = "cactus"
 copyright = " - Ronan Lamour"
@@ -7,7 +7,7 @@ disqusShortname = "r9r-blog"
 
 # Main menu which appears below site header.
 [[menu.main]]
-name = "Accueil"
+name = "Home"
 url = "/"
 weight = 1
 
@@ -22,9 +22,23 @@ url = "/tags"
 weight = 3
 
 [[menu.main]]
-name = "A propos"
+name = "About"
 url = "/about"
 weight = 4
+
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "dracula"
+    tabWidth = 3
+
 
 [params]
 
@@ -33,7 +47,7 @@ weight = 4
   googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
 
   # Home page settings
-  description = "Blog personnnel partagant mes expériences dans le gaming, le développement, le hardware et l'informatique en général."
+  description = "Personal blog sharing my experiences in gaming, development, hardware and software."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
