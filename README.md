@@ -13,7 +13,7 @@ Start hugo server locally. This command will track changes in realtime. Open `ht
 
 Create a new article in the blog.
 
-#### `./deploy.sh "<optional reason>"
+#### `./deploy.sh "<optional reason>"`
 
 Push code to https://github.com/r9r-dev/r9r-dev.github.io
 
