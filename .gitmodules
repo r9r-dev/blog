@@ -5,3 +5,7 @@
 	path = r9r-dev.github.io
 	url = https://github.com/r9r-dev/r9r-dev.github.io.git
 	branch = master
+[submodule "public"]
+	path = public
+	url = https://github.com/r9r-dev/r9r-dev.github.io.git
+	branch = master
