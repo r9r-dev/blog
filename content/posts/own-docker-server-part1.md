@@ -53,15 +53,20 @@ C'est là que *Portainer* entre en scène. Portainer ajoute une couche d'abstrac
 *Petit aperçu de Portainer avec ses boutons pour gérer les containers.*
 
 ## Pour résumer
+
+![image](/img/docker/architecture.png)
+*L'architecture cible de notre serveur*
+
 Nous avons vu qu'il était possible de monter son propre serveur tout propre en utilisant *Traefik* pour la liaison entre "front" à travers le port HTTPS/443 et les conteneurs et de l'administrer en utilisant *Portainer*. Ne reste plus qu'à se lancer.
 
 Dans les prochaines parties, nous verrons :
 
-Quel machine pour ce genre de projet ?
-Les prérequis et l'installation du socle
-Déploiement des premiers conteneurs (Traefik et Portainer)
-La configuration de Traefik au travers des labels de conteneurs docker
-Où mettre ses données ?
-Sauvegarder !
+- Quel machine pour ce genre de projet ?
+- Les prérequis et l'installation du socle
+- Déploiement des premiers conteneurs (Traefik et Portainer)
+- La configuration de Traefik au travers des labels de conteneurs docker
+- Où mettre ses données ?
+- Sauvegarder !
+
 Enfin, nous verrons comment automatiser le déploiement de ce genre de serveur afin de ne plus avoir à le refaire plus tard (en cas de panne par exemple).
 
