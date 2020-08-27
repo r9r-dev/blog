@@ -1,3 +1,7 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://blog.r9r.dev/"
+languageCode = "fr-fr"
+title = "code :: sys :: hard :: gaming"
+theme = "cactus"
+copyright = "© 2020 - Ronan Lamour"
+disqusShortname "r9r-blog"
+
