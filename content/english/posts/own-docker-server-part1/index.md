@@ -7,66 +7,66 @@ tags: ["serveur de conteneurs", "docker", "portainer", "traefik", "kubernetes", 
 
 ![image](img/shipping-containers.png)
 
-Aujourd'hui, il est tout à fait possible de consommer internet de manière passive et d'obtenir à peu près tous les services que l'on souhaite sans bidouille. Un blog sur blogger.com, un site web pour pas trop cher chez ovh, un service de cloud sur google drive et même ses propres applications web. Mais si vous êtes comme moi et aimez vouloir héberger tout par vous même, je vais vous présenter, pas à pas et de manière détaillée, comment monter votre propre serveur couteau-suisse multi-fonctions en quelques étapes.<!--more-->
+Today, it is quite possible to consume the internet passively and get just about any service you want without a tinker. A blog on blogger.com, a cheap website at ovh, a cloud service on google drive and even your own web applications. But if you're like me and like to host everything by yourself, I'll show you, step by step and in a detailed way, how to set up your own multi-function swiss army knife server in a few steps.<!--more-->
 
-Ce serveur devra répondre à divers critères, tout d'abord de manière globale:
+This server will have to meet various criteria, first of all in a global way:
 
-* Capable d’accueillir tous nos services.
-* Facile à configurer : on ne veut pas y passer des heures à le mettre à jour ou à changer le hardware.
-Avec le moins de bidouille possible : on souhaite utiliser des outils répandus et avec une communauté conséquente derrière.
-* Léger : il ne faudrait pas que l'infrastructure qui maintiens le serveur prenne à lui tout seul la moitié de ses ressources.
-* Sécurisé : même si on est pas des experts en sécurité, on souhaite que le serveur ne soit pas une passoire.
-* Sauvegardé : rien n'est infaillible et même si pour du perso, on ne cherche pas un SLA de 99,9%, on aimerait quand même pouvoir remonter facilement son serveur en cas de panne.
+* Able to accommodate all our services.
+* Easy to configure: you don't want to spend hours updating it or changing the hardware.
+With the least amount of fiddling around: we want to use widespread tools and with a large community behind it.
+* Lightweight: the infrastructure that maintains the server should not have to take up half of its resources by itself.
+* Secure: even if we are not security experts, we don't want the server to be a sieve.
+* Backed up: nothing is infallible and even if you are not looking for a 99.9% SLA, you would still like to be able to easily rebuild your server in case of failure.
 
-De manière plus technique, les technologies d'aujourd'hui nous imposent également l'utilisation de docker (même s'il existe d'autres solutions moins répandues). Mais d'autres critères me viennent à l'idée :
+In a more technical way, today's technologies also impose the use of dockers (even if there are other less widespread solutions). But other criteria come to my mind:
 
-* Le serveur exposera uniquement son port 443 au public. Avec les temps qui courent, l'HTTPS devient de plus en plus évident et puisqu'il est devenu extrêmement simple et gratuit de commander un certificat, autant ne pas s'en priver.
-* En parlant de certificat, tout cela sera automatique. On ne va quand même non plus aller commander nos certificats nous-mêmes.
-* Le serveur sera capable d’accueillir plusieurs domaines et sous-domaines. Chaque application se rattachant à une de ces urls.
-* Enfin, puisqu'on est pas partis pour monter un serveur mono-core, il devra pouvoir être "load-balancé", c'est à dire être capable de router un point d'entrée sur plusieurs copies d'un même service pour assurer la montée en charge. Et pourquoi pas sur un autre serveur, plus tard.
+* The server will only expose its port 443 to the public. With the current times, HTTPS is becoming more and more obvious and since it has become extremely simple and free to order a certificate, we might as well not deprive ourselves of it.
+* Speaking of certificates, all this will be automatic. We're not going to order our certificates ourselves either.
+* The server will be able to host several domains and sub-domains. Each application will be linked to one of these urls.
+* Finally, since we are not going to set up a single-core server, it will have to be "load-balanced", i.e. be able to route an entry point on several copies of the same service to ensure the scalability. And why not on another server, later.
 
 ## Kubernetes
-Vous connaissez peut-être ou avez déjà entendu parler de *Kubernetes*. C'est un orchestrateur de conteneurs qui fait carrément le café puisqu'il est capable de déployer des applications en 3 clics grâce à *Helm*. C'est un outil extrêmement puissant mais pour plusieurs raisons, peu recommandable si vous suivez ce tutoriel.
+You may know or have already heard of *Kubernetes*. It's a container orchestrator that makes the coffee, as it is able to deploy applications in 3 clicks thanks to *Helm*. It is an extremely powerful tool but for several reasons, not recommended if you follow this tutorial.
 
-* Il nécessite l'emploi de deux services assez rapidement gourmands en ressources : etcd (les données du kube) et control plane (les tours de contrôle). Et ça ne réponds pas à un de nos critères : la légèreté.
-* Kubernetes est complexe. A lui tout seul, il nécessite de nombreuses heures de pratique avant de pouvoir être maîtrisé, et c'est sans compter sur ses 3 mises à jour majeures qui sortent par an.
-* Il nécessite de la redondance : par nature, étant donné qu'il est complexe, il faut une grande maîtrise pour ne pas se rater sur sa configuration. De grandes périodes de "en travaux" seront donc à prévoir si vous prévoyez de ne conserver qu'un seul serveur.
-* Il a été conçu dans ses plus profondes racines pour gérer le scaling. C'est à dire, la montée en puissance rapide. Hors, nous partons vers un mono-serveur, peut-être un deuxième un jour... On aura donc le temps d'y repenser.
+* It requires the use of two fairly resource-intensive services: etcd (the kube data) and control plane (the control towers). And it doesn't meet one of our criteria: lightness.
+* Kubernetes is complex. On its own, it requires many hours of practice before it can be mastered, and that's without counting on its 3 major updates that come out every year.
+* It requires redundancy: by nature, since it is complex, it requires a great deal of mastery so as not to miss its configuration. Large periods of "work in progress" will therefore be expected if you plan to keep only one server.
+* It has been designed in its deepest roots to handle scaling. That is to say, the rapid rise in power. However, we're moving towards a single server, maybe a second one one one day... So we'll have time to think about it.
 
-Bref, *Kubernetes* c'est vraiment le fun, croyez-moi, c'est très probablement l'avenir des 10 prochaines années du monde informatique professionnel, mais pour un projet perso, à l'heure où j'écris ces lignes, c'est un peu trop puissant.
+In short, *Kubernetes* is really fun, believe me, it's very probably the future of the next 10 years of the professional IT world, but for a personal project, at the time I'm writing these lines, it's a bit too powerful.
 
 ## Architecture
-Notre serveur ne sera donc qu'une simple machine avec des conteneurs docker qui communiquent entre-eux. Juste ça. Et en fait, vous verrez que ça suffit largement. Docker virtualise déjà toute la partie réseau ce qui fait que si vous n'exposez pas explicitement un port sur l'extérieur, il restera inaccessible (même pour vous). Côté sécurité, on a donc environ rien à faire. Ensuite, docker possède des règles de redémarrage. Si le docker s'arrête pour une raison ou pour une autre, il pourra être automatiquement redémarré. Enfin docker tout seul, bah c'est extrêmement performant. Constatez par vous-même la vélocité de feu de ce blog :)
+Our server will therefore be a simple machine with docker containers that communicate with each other. Just that. And in fact, you'll see that's more than enough. Docker already virtualizes the whole network part, so if you don't explicitly expose a port to the outside, it will remain inaccessible (even for you). On the security side, we have about nothing to do. Then, docker has reboot rules. If the docker stops for any reason, it can be automatically restarted. Finally, docker alone, well, it's extremely powerful. See by yourself the fire velocity of this blog :)
 
 ### Traefik
-Comme expliqué plus tôt, le serveur n'exposera que son port 443. On va éviter de monter un serveur nginx avec plein de configuration derrière pour router le trafic. Non franchement, croyez-moi, vous n'avez pas envie de vous ennuyer avec ça. Du coup, l'idée est de laisser un outil faire le travail à votre place. Et le roi, pardon, je voulait dire le maître jedi dans ce domaine, c'est *Traefik*. Traefik, c'est un routeur (ou *reverse proxy* si vous préférez) qui connecte vos adresses web à vos services web. Il découvre de manière automatisée les conteneurs et les expose lui-même. Il fait aussi load-balancing, va chercher ses certificats tout seul chez Let's Encrypt (tout en gérant le renouvellement auto) ; et bien sûr, il fait tout ça tout seul, sans aucune intervention (hormis quelques labels à ajouter à vos conteneurs). Et comme si tout ça ne suffisait pas, il consomme vraiment très peu de ressources.
+As explained earlier, the server will only expose its port 443. We will avoid mounting a nginx server with a lot of configuration behind it to route traffic. No honestly, believe me, you don't want to bother with that. So the idea is to let a tool do the work for you. And the king, sorry, I meant the jedi master in this field, it's *Traefik*. Traefik is a router (or *reverse proxy* if you prefer) that connects your web addresses to your web services. It automatically discovers the containers and exposes them itself. It also does load-balancing, fetches its certificates by itself from Let's Encrypt (while managing the auto-renewal); and of course, it does it all by itself, without any intervention (except a few labels to add to your containers). And as if all that wasn't enough, he really consumes very few resources.
 
 ![image](img/traefik-architecture.png)
-*L'architecture de Traefik (©Traefik)*
+*Traefik architecture (©Traefik)*
 
 ### Portainer
-Traefik est là pour router mais comment administrer ? Lorsque vous aurez tout plein de conteneurs dockers, vous pourrez toujours exécuter un petit `docker ps` pour afficher une liste de vos conteneurs ou un `docker volume ls` pour vos volumes. Etc... Sauf que bon, on est pas vraiment dans la simplicité que je vous avait promise.
+Traefik is there to route but how to administrate? When you have a lot of docker containers, you can always run a small `docker ps` to display a list of your containers or a `docker volume ls` for your volumes. Etc... Except that well, we're not really in the simplicity I promised you.
 
-C'est là que *Portainer* entre en scène. Portainer ajoute une couche d'abstraction à docker à travers une interface web. Cette dernière permet de faire tout ce que vous ferriez à travers des lignes de commandes mais en quelques clics comme mettre à jour vos conteneurs, configurer les volumes, charger des fichiers de déploiement, etc.
+That's where *Portainer* comes in. Portainer adds a layer of abstraction to docker through a web interface. The latter allows you to do everything you would do through command lines but in a few clicks such as updating your containers, configuring volumes, loading deployment files, etc.
 
 ![image](img/portainer.png)
-*Petit aperçu de Portainer avec ses boutons pour gérer les containers.*
+*Small preview of Portainer with its buttons to manage containers.*
 
 ## Pour résumer
 
 ![image](img/architecture.png)
-*L'architecture cible de notre serveur*
+*Target architecture of our server*
 
-Nous avons vu qu'il était possible de monter son propre serveur tout propre en utilisant *Traefik* pour la liaison entre "front" à travers le port HTTPS/443 et les conteneurs et de l'administrer en utilisant *Portainer*. Ne reste plus qu'à se lancer.
+We saw that it was possible to set up your own server all clean using *Traefik* for the connection between "front" through the HTTPS/443 port and the containers and to administer it using *Portainer*. All that's left to do is to get started.
 
-Dans les prochaines parties, nous verrons :
+In the next parts, we will see :
 
-- Quel machine pour ce genre de projet ?
-- Les prérequis et l'installation du socle
-- Déploiement des premiers conteneurs (Traefik et Portainer)
-- La configuration de Traefik au travers des labels de conteneurs docker
-- Où mettre ses données ?
-- Sauvegarder !
+- Which machine for this kind of project?
+- Prerequisites and installation of the base
+- Deployment of the first containers (Traefik and Portainer)
+- Traefik's configuration through dock container labels
+- Where to put your data?
+- Save!
 
-Enfin, nous verrons comment automatiser le déploiement de ce genre de serveur afin de ne plus avoir à le refaire plus tard (en cas de panne par exemple).
+Finally, we will see how to automate the deployment of this kind of server so that we don't have to do it again later (in case of failure for example).
 
