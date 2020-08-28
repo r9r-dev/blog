@@ -2,7 +2,7 @@
 title: "Monter son serveur de conteneurs Docker - Partie 1"
 date: 2020-08-27T14:15:39+02:00
 category: Docker
-tags: ["serveur de conteneurs", "docker", "portainer", "traefik", "kubernetes", "architecture", "serveur", "sla", "sécurité", "automatisation"]
+tags: ["serveur de conteneurs", "docker", "portainer", "traefik", "kubernetes", "architecture", "serveur", "sla", "sécurité", "automatisation", "ssl"]
 ---
 
 ![image](img/shipping-containers.png)
@@ -28,7 +28,7 @@ De manière plus technique, les technologies d'aujourd'hui nous imposent égalem
 ## Kubernetes
 Vous connaissez peut-être ou avez déjà entendu parler de *Kubernetes*. C'est un orchestrateur de conteneurs qui fait carrément le café puisqu'il est capable de déployer des applications en 3 clics grâce à *Helm*. C'est un outil extrêmement puissant mais pour plusieurs raisons, peu recommandable si vous suivez ce tutoriel.
 
-* Il nécessite l'emploi de deux services assez rapidement gourmands en ressources : etcd (les données du kube) et control plane (les tours de contrôle). Et ça ne réponds pas à un de nos critères : la légèreté.
+* Il nécessite l'emploi de deux services assez rapidement gourmands en ressources : etcd (les données du kube) et control plane (les tours de contrôle). Et ça ne réponds pas à un de nos critères : la légèreté (ok, depuis il existe micro-k8s).
 * Kubernetes est complexe. A lui tout seul, il nécessite de nombreuses heures de pratique avant de pouvoir être maîtrisé, et c'est sans compter sur ses 3 mises à jour majeures qui sortent par an.
 * Il nécessite de la redondance : par nature, étant donné qu'il est complexe, il faut une grande maîtrise pour ne pas se rater sur sa configuration. De grandes périodes de "en travaux" seront donc à prévoir si vous prévoyez de ne conserver qu'un seul serveur.
 * Il a été conçu dans ses plus profondes racines pour gérer le scaling. C'est à dire, la montée en puissance rapide. Hors, nous partons vers un mono-serveur, peut-être un deuxième un jour... On aura donc le temps d'y repenser.
