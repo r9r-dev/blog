@@ -5,11 +5,10 @@ set -e
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
-# Build the project.
-hugo -t cactus # if using a theme, replace with `hugo -t <YOURTHEME>`
 
-# Go To Public folder
-cd public
+# Go To Cactus folder
+cd themes
+cd cactus
 
 # Rebase if needed
 git pull -r
@@ -18,7 +17,6 @@ git pull -r
 git add .
 
 # Commit changes.
-msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
