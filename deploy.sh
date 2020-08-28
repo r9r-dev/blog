@@ -11,9 +11,6 @@ hugo -t cactus # if using a theme, replace with `hugo -t <YOURTHEME>`
 # Go To Public folder
 cd public
 
-# Rebase if needed
-git pull -r
-
 # Add changes to git.
 git add .
 
@@ -23,6 +20,9 @@ if [ -n "$*" ]; then
 	msg="$*"
 fi
 git commit -m "$msg"
+
+# Rebase if needed
+git pull -r
 
 # Push source and build repos.
 git push origin master
