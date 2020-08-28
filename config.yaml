@@ -4,20 +4,49 @@ title: "code :: sys :: hard :: gaming"
 theme: cactus
 copyright: " - Ronan Lamour"
 disqusShortname: r9r-blog
-menu:
-  main:
-    - name: Accueil
-      url: /
-      weight: 1
-    - name: Blog
-      url: /posts
-      weight: 2
-    - name: Tags
-      url: /tags
-      weight: 3
-    - name: A propos
-      url: /about
-      weight: 4
+DefaultContentLanguage: fr
+languages:
+  fr:
+    languageName: Français
+    weight: 1
+    contentDir: content/french
+    menu:
+      main:
+        - name: Accueil
+          url: /
+          weight: 1
+        - name: Blog
+          url: /posts
+          weight: 2
+        - name: Tags
+          url: /tags
+          weight: 3
+        - name: A propos
+          url: /about
+          weight: 4
+  en:
+    languageName: English
+    weight: 2
+    contentDir: content/english
+    params:
+      description: >-
+        Sharing experiences in gaming, networking, development,
+        hardware and software.
+      dateFormat: 2006-01-02
+    menu:
+      main:
+        - name: Home
+          url: /en
+          weight: 1
+        - name: Blog
+          url: /en/posts
+          weight: 2
+        - name: Tags
+          url: /en/tags
+          weight: 3
+        - name: About
+          url: /en/about
+          weight: 4
 markup:
   highlight:
     codeFences: true
@@ -42,7 +71,7 @@ params:
   tagsOverview: false
   showProjectsList: true
   projectsUrl: "https://github.com/r9r-dev"
-  dateFormat: Monday 02 January 2006
+  dateFormat: 02/01/2006
   show_updated: false
   comments:
     enabled: true

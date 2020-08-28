@@ -5,7 +5,7 @@ category: Docker
 tags: ["serveur de conteneurs", "docker", "portainer", "traefik", "kubernetes", "architecture", "serveur", "sla", "sécurité", "automatisation"]
 ---
 
-![image](/img/docker/shipping-containers.png)
+![image](img/shipping-containers.png)
 
 Aujourd'hui, il est tout à fait possible de consommer internet de manière passive et d'obtenir à peu près tous les services que l'on souhaite sans bidouille. Un blog sur blogger.com, un site web pour pas trop cher chez ovh, un service de cloud sur google drive et même ses propres applications web. Mais si vous êtes comme moi et aimez vouloir héberger tout par vous même, je vais vous présenter, pas à pas et de manière détaillée, comment monter votre propre serveur couteau-suisse multi-fonctions en quelques étapes.<!--more-->
 
@@ -41,7 +41,7 @@ Notre serveur ne sera donc qu'une simple machine avec des conteneurs docker qui 
 ### Traefik
 Comme expliqué plus tôt, le serveur n'exposera que son port 443. On va éviter de monter un serveur nginx avec plein de configuration derrière pour router le trafic. Non franchement, croyez-moi, vous n'avez pas envie de vous ennuyer avec ça. Du coup, l'idée est de laisser un outil faire le travail à votre place. Et le roi, pardon, je voulait dire le maître jedi dans ce domaine, c'est *Traefik*. Traefik, c'est un routeur (ou *reverse proxy* si vous préférez) qui connecte vos adresses web à vos services web. Il découvre de manière automatisée les conteneurs et les expose lui-même. Il fait aussi load-balancing, va chercher ses certificats tout seul chez Let's Encrypt (tout en gérant le renouvellement auto) ; et bien sûr, il fait tout ça tout seul, sans aucune intervention (hormis quelques labels à ajouter à vos conteneurs). Et comme si tout ça ne suffisait pas, il consomme vraiment très peu de ressources.
 
-![image](/img/docker/traefik-architecture.png)
+![image](img/traefik-architecture.png)
 *L'architecture de Traefik (©Traefik)*
 
 ### Portainer
@@ -49,12 +49,12 @@ Traefik est là pour router mais comment administrer ? Lorsque vous aurez tout p
 
 C'est là que *Portainer* entre en scène. Portainer ajoute une couche d'abstraction à docker à travers une interface web. Cette dernière permet de faire tout ce que vous ferriez à travers des lignes de commandes mais en quelques clics comme mettre à jour vos conteneurs, configurer les volumes, charger des fichiers de déploiement, etc.
 
-![image](/img/docker/portainer.png)
+![image](img/portainer.png)
 *Petit aperçu de Portainer avec ses boutons pour gérer les containers.*
 
 ## Pour résumer
 
-![image](/img/docker/architecture.png)
+![image](img/architecture.png)
 *L'architecture cible de notre serveur*
 
 Nous avons vu qu'il était possible de monter son propre serveur tout propre en utilisant *Traefik* pour la liaison entre "front" à travers le port HTTPS/443 et les conteneurs et de l'administrer en utilisant *Portainer*. Ne reste plus qu'à se lancer.
