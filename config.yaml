@@ -1,0 +1,56 @@
+baseURL: "https://blog.r9r.dev/"
+languageCode: en-us
+title: "code :: sys :: hard :: gaming"
+theme: cactus
+copyright: " - Ronan Lamour"
+disqusShortname: r9r-blog
+menu:
+  main:
+    - name: Accueil
+      url: /
+      weight: 1
+    - name: Blog
+      url: /posts
+      weight: 2
+    - name: Tags
+      url: /tags
+      weight: 3
+    - name: A propos
+      url: /about
+      weight: 4
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: dracula
+    tabWidth: 3
+params:
+  colortheme: dark
+  rss: true
+  googleAnalyticsAsync: true
+  description: >-
+    Blog personel de partage d'expériences en gaming, réseau, développement,
+    matériel et logiciels.
+  mainSection: posts
+  showAllPostsOnHomePage: false
+  postsOnHomePage: 5
+  tagsOverview: false
+  showProjectsList: true
+  projectsUrl: "https://github.com/r9r-dev"
+  dateFormat: Monday 02 January 2006
+  show_updated: false
+  comments:
+    enabled: true
+    engine: disqus
+  social:
+    - name: github
+      link: "https://github.com/r9r-dev"
+    - name: linkedin
+      link: "https://www.linkedin.com/in/ronan-lamour-b7aa6955/"
+    - name: email
+      link: contact@r9r.dev
