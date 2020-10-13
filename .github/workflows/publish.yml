@@ -23,7 +23,7 @@ jobs:
             submodules: 'recursive'
 
       # Runs a single command using the runners shell
-      - name: Build zip
+      - name: Publish site
         run: |
           hugo -t cactus
-          cp -R public /data/blog
+          rsync -a -v --delete-after ./public/ /data/blog 
