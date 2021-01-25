@@ -32,7 +32,7 @@ Despite everything, the app has continued its meteoric rise, reaching more than 
 
 ## Facebook's business model
 
-Facebook earns a lot of money, it's no mystery. Its revenues are mainly due to the highly targeted advertising campaigns that the platform allows. Today, it is the most efficient platform in the world in this field. As the majority of users share almost all their life on the platform, it is very easy for Facebook to promise results during an advertising campaign. And this proves to be true in practice. On Facebook, anyone can promote a group or a brand with just a few clicks and a good bank account. You can target people with a whole bunch of filters such as time of login, interests, age, location, etc. You can then determine your budget and ... the desired platforms.
+Facebook earns a lot of money, it's no mystery. Its revenues are mainly due to the highly targeted advertising campaigns that the platform allows. Today, it is the most efficient platform in the world in this field. As the majority of users share almost all their life on the platform (some on Facebook, others on Instagram), it is very easy for Facebook to promise results during an advertising campaign. And this proves to be true in practice. On Facebook, anyone can promote a group or a brand with just a few clicks and a good bank account. You can target people with a whole bunch of filters such as time of login, interests, age, location, etc. You can then determine your budget and ... the desired platforms.
 Today, the platforms you can use for promotion are :
 
 -	Facebook
