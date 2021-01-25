@@ -65,7 +65,7 @@ En Inde, Whatsapp permet de s’envoyer de l’argent entre particuliers. Ainsi,
 
 ## Le DIEM : L’eldorado
 
-Bref, tout commence à prendre forme dans votre tête, j'en suis sur. Et vous commencez je l'espère, petit à petit, à comprendre pourquoi tout ceci est un problème. L'écosystème Facebook devient tellement puissant qu'il semble même que allons droit vers un "Internet Facebook". Car en effet, à part le moteur de recherche, que lui manque-t-il ? Hahaha, bande de naïfs.
+Bref, tout commence à prendre forme dans votre tête, j'en suis sur. Et vous commencez je l'espère, petit à petit, à comprendre pourquoi tout ceci est un problème. L'écosystème Facebook devient tellement puissant qu'il semble même que nous allons droit vers un "Internet Facebook". Et ils sont malins car, je suis sur que la plupart d'entre vous ne voient pas encore le mal. Car en effet, à part le moteur de recherche, que lui manque-t-il ? Hahaha, bande de naïfs.
 
 Facebook travaille depuis quelques mois (1 an et demi plus exactement), sur une « cryptomonnaie » appelée le *Diem*. C’est-à-dire, une sorte de bitcoin propre à la plateforme (même si Facebook n’est pas le seul acteur de la monnaie, c’est l’entreprise qui en a l’initiative). Le but de cette « monnaie » sera de de posséder une devise permettant l’échange entre tous les individus sur terre. En quelques sorte, le Diem est une monnaie neutre de tout pays qui vous permettra de convertir vos euros pour acheter des biens à travers les plateformes que sont Whatsapp, Instagram ou Facebook (mais aussi d’autres comme Lydia ou Paypal, enfin à priori, rien n’est sur de ce côté).
 
