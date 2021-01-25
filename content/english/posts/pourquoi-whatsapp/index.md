@@ -18,9 +18,9 @@ In addition to easy access, Whatsapp has, since its creation in 2009, laid the f
 - End-to-end encryption[^1]
 
 In addition to the proposal, it must be said that at this time the world of private messaging is in a lethargic state. The old messengers like AIM, ICQ and MSN Messenger have not been able to renew themselves through the mobile and people have scattered on different platforms like Facebook Messenger, Google Talk, Viber or WeChat.
-So the highway was all mapped out for Whatsapp which, in barely 4 years, was able to claim to have 400 million active users, making this messaging platform, the world's first, and by far (I don't voluntarily count the Chinese mastodon QQ which has never been exported from the country)[^2].
+So the highway was all mapped out for Whatsapp which, in barely 4 years, was able to claim to have 400 million active users, making this messaging platform, the world's first, and by far (I don't voluntarily count the Chinese mastodon QQ which has never been exported from the country).
 
-So everything was perfect for everyone. Developers continued to add features to an almost free and ad-free messaging system, and on the other hand, users were thrilled with its efficiency and simplicity.
+So everything was perfect for everyone. Developers continued to add features to an almost free[^2] and ad-free messaging system, and on the other hand, users were thrilled with its efficiency and simplicity.
 
 ## The Facebook takeover
 

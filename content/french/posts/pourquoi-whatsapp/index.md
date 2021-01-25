@@ -18,9 +18,9 @@ En plus d’un accès facile, Whatsapp a, dès sa création en 2009, posé les b
 -	Un chiffrage de bout-en-bout[^1]
 
 En plus de la proposition, il faut dire qu’à cette époque le monde de la messagerie privée est dans un état léthargique. En occident, les vieilles messageries comme AIM, ICQ et MSN Messenger n’ont pas su se renouveler à travers le mobile et les gens se sont éparpillées sur différentes plateformes comme Facebook Messenger, Google Talk, Viber ou encore WeChat.
-L’autoroute était donc toute tracée pour Whatsapp qui, en à peine 4 ans, à pu se vanter d’avoir 400 millions d’utilisateurs actifs, faisant de cette messagerie, la première messagerie mondiale, et de très loin (je ne compte pas volontairement le mastodonte chinois QQ qui ne s’est jamais exporté du pays)[^2].
+L’autoroute était donc toute tracée pour Whatsapp qui, en à peine 4 ans, à pu se vanter d’avoir 400 millions d’utilisateurs actifs, faisant de cette messagerie, la première messagerie mondiale, et de très loin (je ne compte pas volontairement le mastodonte chinois QQ qui ne s’est jamais exporté du pays).
 
-Tout était donc parfait dans le meilleur des mondes. Les développeurs continuaient d’ajouter des fonctionnalités à une messagerie presque gratuite et sans publicité et de l’autre côté, les utilisateurs étaient ravis par son efficacité et sa simplicité.
+Tout était donc parfait dans le meilleur des mondes. Les développeurs continuaient d’ajouter des fonctionnalités à une messagerie presque gratuite[^2] et sans publicité et de l’autre côté, les utilisateurs étaient ravis par son efficacité et sa simplicité.
 
 ## Le rachat par Facebook
 
