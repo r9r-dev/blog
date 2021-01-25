@@ -2,8 +2,6 @@ baseURL: "https://blog.r9r.dev/"
 languageCode: en-us
 title: "code :: sys :: hard :: gaming"
 theme: cactus
-googleAnalytics: "G-YK0RBCYXFP"
-googleAnalyticsAsync: true
 copyright: " - Ronan Lamour"
 disqusShortname: r9r
 DefaultContentLanguage: fr
@@ -63,13 +61,13 @@ markup:
 params:
   colortheme: dark
   rss: true
-  googleAnalyticsAsync: true
+  googleAnalytics: "G-YK0RBCYXFP"
   description: >-
     Blog personel de partage d'expériences en gaming, réseau, développement,
     matériel et logiciels.
   mainSection: posts
   showAllPostsOnHomePage: false
-  postsOnHomePage: 5
+  postsOnHomePage: 20
   tagsOverview: false
   showProjectsList: true
   projectsUrl: "https://github.com/r9r-dev"
