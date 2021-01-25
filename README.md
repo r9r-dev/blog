@@ -1,17 +1,38 @@
 # blog
 Source code to generate my blog on https://blog.r9r.dev using the [Hugo Engine](https://gohugo.io/)
 
-## Common things to know
+##  First pull
+Run `git submodule update --init --recursive` to pull submodules after cloning this repository.
 
-### Useful commands
+## Install Hugo
+Download Hugo from it's official repository here : https://github.com/gohugoio/hugo/releases
 
-#### `hugo server`
+Use the extended version !
 
-Start hugo server locally. This command will track changes in realtime. Open `http://localhost:1313` to view the website.
+## Use Hugo
 
-#### `hugo new posts/post-name.md`
+### Run the server locally
 
-Create a new article in the blog.
+This command will track changes in realtime. Open `http://localhost:1313` to view the website.
+
+```bash
+hugo server
+```
+
+### Create a new article
+
+
+To create a new article, first run this command where `post-name` is a short name of the title of your article:
+```bash
+hugo new posts/post-name/index.md
+```
+
+### Translate an article
+
+When you are done writing your article, copy-paste your article's folder in `content/english/posts` and translate it.
+
+You can remove the subfolder `img` if you created it because Hugo will automatically use the one in the french folder.
+
 
 ### Syntax Highlighting
 
