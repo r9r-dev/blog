@@ -57,7 +57,7 @@ D'ailleurs, les dernières (ou prochaines) innovations de Whatsapp montrent la v
 
 ### Whatsapp Business
 
-Whatsapp Business permet à une entreprise de devenir un contact sur l’application. Une entreprise dite « vérifée » qui peut ainsi créer le lien avec Instagram ou Facebook. Elle pourra ainsi bientôt contacter directement sa base d’utilisateurs et plus tard proposer de vendre ses services.
+Whatsapp Business permet à une entreprise de devenir un contact sur l’application. Une entreprise dite « vérifiée » qui peut ainsi créer le lien avec Instagram ou Facebook. Elle pourra ainsi bientôt contacter directement sa base d’utilisateurs et plus tard proposer de vendre ses services.
 
 ### Le paiement p2p
 
