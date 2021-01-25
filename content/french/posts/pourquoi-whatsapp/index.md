@@ -71,7 +71,7 @@ Facebook travaille depuis quelques mois (1 an et demi plus exactement), sur une 
 
 La voilà donc la petite olive. Comme l'argent ne suffit pas, il faudrait en plus que Facebook possède directement la monnaie elle-même. Et bien qu'on est quand même très loin d'une domination sur les monnaies nationales comme l'euro ou le dollar (le Diem sera directement indexé sur ces monnaies), ça sent quand même bien fort le pet foireux.
 
-Imaginez un monde ou vous êtes payés en euro et qu'ensuite, vous soyez obligés de convertir ces euros en Diem, ou plutôt en ZukerbergCoin pour acheter votre pain à la boulangerie ? Ça vous parait fou ? On paye déjà en sans contact avec notre téléphone. Franchement, ça va être très facile pour Facebook (il n'y aura que le taux d'adoption comme frein).
+Imaginez un monde ou vous êtes payés en euro et qu'ensuite, vous soyez obligés de convertir ces euros en Diem, ou plutôt en ZukerbergCoin pour acheter votre pain à la boulangerie ? Ça vous parait fou ? On paye déjà en sans contact avec notre téléphone. Franchement, ça va être très facile pour Facebook (il n'y aura que le taux d'adoption comme frein jusqu'au jour ou Facebook proposera aux commerçants des frais inférieurs à un terminal de paiement bancaire classique).
 
 ## Conclusion
 

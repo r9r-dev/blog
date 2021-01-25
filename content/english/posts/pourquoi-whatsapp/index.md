@@ -71,7 +71,7 @@ Facebook has been working for a few months (a year and a half to be exact), on a
 
 So there it is. As money is not enough, Facebook should have the currency itself. And even though we're still far from dominating national currencies like euro or dollar (the Diem will be directly indexed on these currencies), it still smells like a bad fart.
 
-Imagine a world where you are paid in euros and then you have to convert those euros into a Diem, or rather a ZukerbergCoin to buy your bread at the bakery? Does that sound crazy to you? We already pay with our phone. Honestly, it will be very easy for Facebook (there will only be the adoption rate as a brake).
+Imagine a world where you are paid in euros and then you have to convert those euros into a Diem, or rather a ZukerbergCoin to buy your bread at the bakery? Does that sound crazy to you? We already pay with our phone. Honestly, it will be very easy for Facebook (there will only be the adoption rate as a brake until the day when Facebook will offer merchants lower fees than a traditional bank payment terminal).
 
 ## Conclusion
 
