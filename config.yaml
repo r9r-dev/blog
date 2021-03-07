@@ -1,7 +1,6 @@
 baseURL: "https://blog.r9r.dev/"
 languageCode: en-us
 title: "code :: sys :: hard :: gaming"
-googleAnalytics: "G-YK0RBCYXFP"
 theme: cactus
 copyright: " - Ronan Lamour"
 disqusShortname: r9r
