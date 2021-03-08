@@ -27,21 +27,41 @@ Ultra est donc une plateforme identique à Gog ou Steam. Elle permettra d'achete
 
 ### Le marché de l'occasion
 
-La première et pour moi la killer-feature : le marché de l'occasion. Si vous avez un peu suivi l'actualité, Steam s'est fait condamné en Europe car ils ne permettaient pas le marché de l'occasion. Ils ont fait appel et cela pourrait encore durer quelques années mais à terme, ils n'auront plus le choix. Ils devront permettre aux joueurs de revendre leurs jeux.
+La première et pour moi la killer-feature : le marché de l'occasion. Si vous avez un peu suivi l'actualité, Steam s'est fait condamner en Europe car ils ne permettaient pas le marché de l'occasion. Ils ont fait appel et cela pourrait encore durer quelques années mais à terme, ils n'auront plus le choix. Ils devront permettre aux joueurs de revendre leurs jeux.
 
 Ce sera dans l'ADN d'Ultra de permettre le marché de l'occasion. Et cela ne se limitera ni aux jeux, ni à la plateforme elle-même. Sur Ultra, vous pourrez non seulement acheter d'occasion et revendre d'occasion mais vous pourrez revendre tout ce que les développeurs vous auront permis de revendre. DLCs, items en jeu, mods, et même abonnement, tout ce qui se trouve sur Ultra est un bien numérique indépendant qui sera en la possession d'un joueur dans une sorte de portefeuille numérique. En gros, c'est un peu comme si vous aviez votre jeu sur votre étagère dans votre salon.
 
 Un bien numérique pourra donc être revendu sur la plateforme mais pas que. Vous pourrez très bien envoyer votre jeu ou votre skin directement à un autre joueur. Ultra ne servant que d'intermédiaire.
 
-Pour attirer les studios, Ultra a mis en place un système de taxes. Pour faire simple, le studio qui possède un jeu établira les règles de tous ses biens-numériques. Si bien que si vous souhaitez vendre un jeu, un pourcentage sera reversé au studio de développement. Idem si vous souhaitez le donner un ami, vous devrez tout de même payer une taxe. Sinon évidement, avec internet, ce serait un peu trop facile.
+Pour attirer les studios, Ultra a mis en place un système de taxes. Pour faire simple, le studio qui possède un jeu établira les règles de tous ses biens-numériques. Si bien que si vous souhaitez vendre un jeu, un pourcentage sera reversé au studio de développement. Idem si vous souhaitez le donner à un ami, vous devrez tout de même payer une taxe. Sinon évidement, avec internet, ce serait un peu trop facile.
 
 ### Une copie physique
 
 La technologie derrière Ultra pourra permettre une inter-compatibilité. Ce qui est annoncé c'est que (toujours selon le bon vouloir du studio), si vous achetez un jeu, il vous appartient. Il est *un peu comme si* vous aviez le jeu physiquement avec vous. Ainsi, vous pourriez utiliser votre jeu pour jouer sur différentes plateformes sans avoir à le repayer.
 
-Mais cela va même un peu plus loin. La technologie derrière Ultra permet de ne pas avoir besoin d'Ultra pour fonctionner. Ça vous parait fou ? Moi aussi. En gros, votre bibliothèque de bien numériques est inscrite dans le marbre et même si Ultra ne fonctionnait pas votre bien lui serait toujours là. Comme une sorte de document qui fait office de preuve d'achat.
+Mais cela va même un peu plus loin. Ultra permet de ne pas avoir besoin d'Ultra pour fonctionner. Ça vous parait fou ? Moi aussi. En gros, votre bibliothèque de bien numériques est inscrite dans le marbre et même si Ultra ne fonctionnait pas, votre bien lui serait toujours là. Comme une sorte de document qui fait office de preuve d'achat.
 
-Cela permet plein d'autres choses. Par exemple, Ultra pourrait permettre d'avoir une seconde plateforme, indépendante de la sienne, qui appartiendrai entièrement à un Studio de grande envergure. La société derrière Ultra a déjà un partenariat avec Ubisoft. Nous pourrions donc tout à fait imaginer acheter un jeu sur Ultra ou sur Uplay et de le voir disponible sur les deux plateformes. En effet, vous disposez du jeu alors pourquoi ne pourriez-vous pas y jouer indépendament de la plateforme sur laquelle vous l'avez acheté ? Bien sûr, rien de tout ça n'a été annoncé par Ultra aujourd'hui mais technologiquement parlant, c'est tout à fait possible (et ce serait extrêmement simple pour Ultra à développer).
+Cela permet plein d'autres choses et c'est sans limites. Voici donc quelques exemples sortis de la bouche des concepteurs d'Ultra ou tout simplement de mon imagination.
+
+#### Récompenses
+
+Supposons donc que vous ayez acheté un jeu en précommande. Le fait de posséder ce jeu pourrait vous permettre d'obtenir des récompenses pour votre fidélité. Vous pourriez également recevoir des récompenses car vous possédez un jeu sur la durée.
+
+#### Multi-jeu
+
+Imaginons que vous possédiez un objet rare que vous avez obtenu dans un jeu. Avec Ultra, un développeur pourrait vous permettre d'obtenir une récompense dans un autre jeu voir même d'utiliser cet objet dans un autre jeu ou une autre version d'un même jeu. Vous pourriez même échanger cet objet d'un jeu à l'autre.
+
+#### Multi-plateforme
+
+Ultra pourrait permettre d'avoir une seconde plateforme, indépendante de la sienne, qui appartiendrai entièrement à un Studio de grande envergure. La société derrière Ultra a déjà un partenariat avec Ubisoft. Nous pourrions donc tout à fait imaginer acheter un jeu sur Ultra ou sur Uplay et de le voir disponible sur les deux plateformes. En effet, vous disposez du jeu alors pourquoi ne pourriez-vous pas y jouer indépendament de la plateforme sur laquelle vous l'avez acheté ? Dites vous bien que technologiquement parlant, la plateforme est déjà capable de proposer une telle possibilité.
+
+#### Rareté
+
+Elément important de la technologie, tout comme pour une copie physique, un studio peut établir une règle limitant le nombre de copies d'un bien numérique. Ceci permettra la rareté et donc d'énormes possibilités autour de l'économie des jeux de la plateforme.
+
+#### Ouverture et transparence
+
+Toutes ces règles seront visibles par les utilisateurs. Par exemple, si vous possédez une épée dans un jeu et que cette épée est présente dans l'éco-système Ultra, alors vous pourrez très facilement savoir combien il en existe et combien il pourra en exister au total.
 
 ### Une monnaie : Le UOS
 
