@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on code :: sys :: hard :: gaming</title>
+    <link>https://blog.ronan.lol/en/tags/blog/</link>
+    <description>Recent content in blog on code :: sys :: hard :: gaming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> - Ronan Lamour</copyright>
+    <lastBuildDate>Wed, 12 Apr 2023 11:44:01 +0100</lastBuildDate><atom:link href="https://blog.ronan.lol/en/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My blog is back</title>
+      <link>https://blog.ronan.lol/en/posts/resurrection/</link>
+      <pubDate>Wed, 12 Apr 2023 11:44:01 +0100</pubDate>
+      
+      <guid>https://blog.ronan.lol/en/posts/resurrection/</guid>
+      <description>It&amp;rsquo;s been quite some time since my last article, and I must admit, my activity has been sparse. However, I&amp;rsquo;m determined to change that. This article serves as a personal reminder to encourage me to write more thought-provoking posts. There&amp;rsquo;s an abundance of topics to discuss, but unfortunately, I seldom allocate time for writing.
+So, today marks the beginning of a new chapter. From now on, I will strive to write at least one post per week.</description>
+    </item>
+    
+  </channel>
+</rss>

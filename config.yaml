@@ -1,4 +1,4 @@
-baseURL: "https://blog.r9r.dev/"
+baseURL: "https://blog.ronan.lol/"
 languageCode: en-us
 title: "code :: sys :: hard :: gaming"
 theme: cactus
@@ -81,4 +81,4 @@ params:
     - name: linkedin
       link: "https://www.linkedin.com/in/ronan-lamour-b7aa6955/"
     - name: email
-      link: contact@r9r.dev
+      link: contact@lamour.bzh

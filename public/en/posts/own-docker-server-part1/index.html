@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Setting up your container server - Part 1 </title>
+  <meta name="description" content="Sharing experiences in gaming, networking, development, hardware and software.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Setting up your container server - Part 1" />
+<meta property="og:description" content="
+Today, it is quite possible to consume the internet passively and get just about any service you want without a tinker. A blog on blogger.com, a cheap website at ovh, a cloud service on google drive and even your own web applications. But if you&rsquo;re like me and like to host everything by yourself, I&rsquo;ll show you, step by step and in a detailed way, how to set up your own multi-function swiss army knife server in a few steps." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.ronan.lol/en/posts/own-docker-server-part1/" />
+<meta property="article:published_time" content="2020-08-27T14:15:39+02:00" />
+<meta property="article:modified_time" content="2020-08-27T14:15:39+02:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setting up your container server - Part 1"/>
+<meta name="twitter:description" content="
+Today, it is quite possible to consume the internet passively and get just about any service you want without a tinker. A blog on blogger.com, a cheap website at ovh, a cloud service on google drive and even your own web applications. But if you&rsquo;re like me and like to host everything by yourself, I&rsquo;ll show you, step by step and in a detailed way, how to set up your own multi-function swiss army knife server in a few steps."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://blog.ronan.lol/css/style-dark.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://blog.ronan.lol/images/favicon.ico" />
+
+  
+  
+  
+</head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        
+        <li><a href="/en">Home</a></li>
+        
+        <li><a href="/en/posts">Blog</a></li>
+        
+        <li><a href="/en/tags">Tags</a></li>
+        
+        <li><a href="/en/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li>
+          <a class="icon" href="https://blog.ronan.lol/en/about/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&text=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&is_video=false&description=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Setting%20up%20your%20container%20server%20-%20Part%201&body=Check out this article: https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&name=Setting%20up%20your%20container%20server%20-%20Part%201&description=%3cp%3e%3cimg%20src%3d%22img%2fshipping-containers.png%22%20alt%3d%22image%22%3e%3c%2fp%3e%0a%3cp%3eToday%2c%20it%20is%20quite%20possible%20to%20consume%20the%20internet%20passively%20and%20get%20just%20about%20any%20service%20you%20want%20without%20a%20tinker.%20A%20blog%20on%20blogger.com%2c%20a%20cheap%20website%20at%20ovh%2c%20a%20cloud%20service%20on%20google%20drive%20and%20even%20your%20own%20web%20applications.%20But%20if%20you%26rsquo%3bre%20like%20me%20and%20like%20to%20host%20everything%20by%20yourself%2c%20I%26rsquo%3bll%20show%20you%2c%20step%20by%20step%20and%20in%20a%20detailed%20way%2c%20how%20to%20set%20up%20your%20own%20multi-function%20swiss%20army%20knife%20server%20in%20a%20few%20steps.%3c%2fp%3e">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&t=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#kubernetes">Kubernetes</a></li>
+    <li><a href="#architecture">Architecture</a>
+      <ul>
+        <li><a href="#traefik">Traefik</a></li>
+        <li><a href="#portainer">Portainer</a></li>
+      </ul>
+    </li>
+    <li><a href="#pour-résumer">Pour résumer</a></li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Setting up your container server - Part 1
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2020-08-27 14:15:39 &#43;0200 CEST" itemprop="datePublished">2020-08-27</time>
+          
+        </div>
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/en/tags/containerr-server" rel="tag">containerr server</a>
+            
+            
+            <a class="tag-link" href="/en/tags/docker" rel="tag">docker</a>
+            
+               
+            <a class="tag-link" href="/en/tags/portainer" rel="tag">portainer</a>
+            
+               
+            <a class="tag-link" href="/en/tags/traefik" rel="tag">traefik</a>
+            
+               
+            <a class="tag-link" href="/en/tags/kubernetes" rel="tag">kubernetes</a>
+            
+               
+            <a class="tag-link" href="/en/tags/architecture" rel="tag">architecture</a>
+            
+               
+            <a class="tag-link" href="/en/tags/server" rel="tag">server</a>
+            
+               
+            <a class="tag-link" href="/en/tags/sla" rel="tag">sla</a>
+            
+               
+            <a class="tag-link" href="/en/tags/security" rel="tag">security</a>
+            
+               
+            <a class="tag-link" href="/en/tags/automation" rel="tag">automation</a>
+            
+               
+            <a class="tag-link" href="/en/tags/ssl" rel="tag">ssl</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+  
+    <div class="article-translate">
+      <i>Lisez-moi en
+      
+        <a href="https://blog.ronan.lol/posts/own-docker-server-part1/">Français</a>
+      </i>
+    </div>
+    <hr>
+  
+    <div class="content" itemprop="articleBody">
+      <p><img src="img/shipping-containers.png" alt="image"></p>
+<p>Today, it is quite possible to consume the internet passively and get just about any service you want without a tinker. A blog on blogger.com, a cheap website at ovh, a cloud service on google drive and even your own web applications. But if you&rsquo;re like me and like to host everything by yourself, I&rsquo;ll show you, step by step and in a detailed way, how to set up your own multi-function swiss army knife server in a few steps.</p>
+<p>This server will have to meet various criteria, first of all:</p>
+<ul>
+<li>Able to accommodate all our services.</li>
+<li>Easy to configure: you don&rsquo;t want to spend hours updating it or changing the hardware.
+With the least amount of fiddling around: we want to use widespread tools and with a large community behind it.</li>
+<li>Lightweight: the infrastructure that maintains the server should not have to take up half of its resources by itself.</li>
+<li>Secure: even if we are not security experts, we don&rsquo;t want the server to be a sieve.</li>
+<li>Backed up: nothing is foolproof and even if you are not looking for a 99.9% SLA, you would still like to be able to easily rebuild your server in case of failure.</li>
+</ul>
+<p>In a more technical way, today&rsquo;s technologies also need the use of docker (even if there are other less widespread solutions). But other criteria come to my mind:</p>
+<ul>
+<li>The server will only expose its port 443 to the public. With the current times, HTTPS is becoming more and more obvious and since it has become extremely simple and free to order a certificate, we might as well not deprive ourselves of it.</li>
+<li>Speaking of certificates, all of this will be automatic. We&rsquo;re not going to order our certificates ourselves either.</li>
+<li>The server will be able to host several domains and sub-domains. Each application will be linked to one of these urls.</li>
+<li>Finally, since we are not going to set up a single-core server, it will have to be &ldquo;load-balanced&rdquo;, i.e. be able to route an entry point on several copies of the same service to ensure the scalability. And why not on another server, later.</li>
+</ul>
+<h2 id="kubernetes">Kubernetes</h2>
+<p>You may know or have already heard of <em>Kubernetes</em>. It&rsquo;s a container orchestrator that makes the coffee, as it is able to deploy applications in 3 clicks thanks to <em>Helm</em>. It is an extremely powerful tool but for several reasons, not recommended if you follow this tutorial.</p>
+<ul>
+<li>It requires the use of two fairly resource-intensive services: etcd (the kube data) and control plane (the control towers). And it doesn&rsquo;t meet one of our criteria: lightness (there is micro-k8s but still).</li>
+<li>Kubernetes is complex. On its own, it requires many hours of practice before it can be mastered, and that&rsquo;s without counting on its 3 major updates that come out every year.</li>
+<li>It requires redundancy: by nature, since it is complex, it requires a great deal of mastery so as not to miss its configuration. Large periods of &ldquo;work in progress&rdquo; will therefore be expected if you plan to keep only one server.</li>
+<li>It has been designed in its deepest roots to handle scaling. That is to say, the rapid rise in power. However, we&rsquo;re moving towards a single server, maybe a second one one one day&hellip; So we&rsquo;ll have time to think about it.</li>
+</ul>
+<p>In short, <em>Kubernetes</em> is really fun, believe me, it&rsquo;s probably the future of the next 10 years of the professional IT world, but for a personal project, at the time I&rsquo;m writing these lines, it&rsquo;s a bit too powerful.</p>
+<h2 id="architecture">Architecture</h2>
+<p>Our server will therefore be a simple machine with docker containers that communicate with each other. Just that. And in fact, you&rsquo;ll see that&rsquo;s more than enough. Docker already virtualizes the whole network part, so if you don&rsquo;t explicitly expose a port to the outside, it will remain inaccessible (even for you). On the security side, we have about nothing to do. Then, docker has reboot rules. If the docker stops for any reason, it can be automatically restarted. Finally, docker alone, well, it&rsquo;s extremely powerful. See by yourself the fire velocity of this blog :)</p>
+<h3 id="traefik">Traefik</h3>
+<p>As explained earlier, the server will only expose its port 443. We will avoid mounting a nginx server with a lot of configuration behind it to route traffic. No honestly, believe me, you don&rsquo;t want to bother with that. So the idea is to let a tool do the work for you. And the king, sorry, I meant the jedi master in this field, it&rsquo;s <em>Traefik</em>. Traefik is a router (or <em>reverse proxy</em> if you prefer) that connects your web addresses to your web services. It automatically discovers the containers and exposes them itself. It also does load-balancing, fetches its certificates by itself from Let&rsquo;s Encrypt (while managing the auto-renewal); and of course, it does it all by itself, without any human intervention (except a few labels to add to your containers). And as if all that wasn&rsquo;t enough, he consumes very few resources.</p>
+<p><img src="img/traefik-architecture.png" alt="image">
+<em>Traefik architecture (©Traefik)</em></p>
+<h3 id="portainer">Portainer</h3>
+<p>Traefik is there to route but how to administrate? When you have a lot of docker containers, you can always run a small <code>docker ps</code> to display a list of your containers or a <code>docker volume ls</code> for your volumes. Etc&hellip; So we&rsquo;re not really in the simplicity I promised you.</p>
+<p>That&rsquo;s where <em>Portainer</em> comes in. Portainer adds a layer of abstraction to docker through a web interface. The latter allows you to do everything you would do through command lines but in a few clicks such as updating your containers, configuring volumes, loading deployment files, etc.</p>
+<p><img src="img/portainer.png" alt="image">
+<em>Small preview of Portainer with its buttons to manage containers.</em></p>
+<h2 id="pour-résumer">Pour résumer</h2>
+<p><img src="img/architecture.png" alt="image">
+<em>Target architecture of our server</em></p>
+<p>We saw that it was possible to set up your own server all clean using <em>Traefik</em> for the connection between &ldquo;front&rdquo; through the HTTPS/443 port and the containers and to administer it using <em>Portainer</em>. All that&rsquo;s left to do is to get started.</p>
+<p>In the next parts, we will see :</p>
+<ul>
+<li>Which machine for this kind of project?</li>
+<li>Prerequisites and installation of the base</li>
+<li>Deployment of the first containers (Traefik and Portainer)</li>
+<li>Traefik&rsquo;s configuration through docker container labels</li>
+<li>Where to put your data?</li>
+<li>Backups!</li>
+</ul>
+<p>Finally, we will see how to automate the deployment of this kind of server so that we don&rsquo;t have to do it again later (in case of failure for example).</p>
+    </div>
+    <hr>
+  </article>
+
+  
+  
+
+
+
+
+  
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+          <script type="text/javascript">
+          
+          (function() {
+              
+              
+              
+              
+          
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              var disqus_shortname = 'r9r';
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    </div>
+
+  
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/en">Home</a></li>
+         
+          <li><a href="/en/posts">Blog</a></li>
+         
+          <li><a href="/en/tags">Tags</a></li>
+         
+          <li><a href="/en/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#kubernetes">Kubernetes</a></li>
+    <li><a href="#architecture">Architecture</a>
+      <ul>
+        <li><a href="#traefik">Traefik</a></li>
+        <li><a href="#portainer">Portainer</a></li>
+      </ul>
+    </li>
+    <li><a href="#pour-résumer">Pour résumer</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&text=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&is_video=false&description=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Setting%20up%20your%20container%20server%20-%20Part%201&body=Check out this article: https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&title=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&name=Setting%20up%20your%20container%20server%20-%20Part%201&description=%3cp%3e%3cimg%20src%3d%22img%2fshipping-containers.png%22%20alt%3d%22image%22%3e%3c%2fp%3e%0a%3cp%3eToday%2c%20it%20is%20quite%20possible%20to%20consume%20the%20internet%20passively%20and%20get%20just%20about%20any%20service%20you%20want%20without%20a%20tinker.%20A%20blog%20on%20blogger.com%2c%20a%20cheap%20website%20at%20ovh%2c%20a%20cloud%20service%20on%20google%20drive%20and%20even%20your%20own%20web%20applications.%20But%20if%20you%26rsquo%3bre%20like%20me%20and%20like%20to%20host%20everything%20by%20yourself%2c%20I%26rsquo%3bll%20show%20you%2c%20step%20by%20step%20and%20in%20a%20detailed%20way%2c%20how%20to%20set%20up%20your%20own%20multi-function%20swiss%20army%20knife%20server%20in%20a%20few%20steps.%3c%2fp%3e">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fblog.ronan.lol%2fen%2fposts%2fown-docker-server-part1%2f&t=Setting%20up%20your%20container%20server%20-%20Part%201">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023   - Ronan Lamour 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        
+        <li><a href="/en">Home</a></li>
+        
+        <li><a href="/en/posts">Blog</a></li>
+        
+        <li><a href="/en/tags">Tags</a></li>
+        
+        <li><a href="/en/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</html>

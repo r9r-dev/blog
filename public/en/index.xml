@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code :: sys :: hard :: gaming</title>
+    <link>https://blog.ronan.lol/en/</link>
+    <description>Recent content on code :: sys :: hard :: gaming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> - Ronan Lamour</copyright>
+    <lastBuildDate>Wed, 12 Apr 2023 12:07:46 +0100</lastBuildDate><atom:link href="https://blog.ronan.lol/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>But is crypto the future or not?</title>
+      <link>https://blog.ronan.lol/en/posts/crypto-avenir-ou-pas/</link>
+      <pubDate>Wed, 12 Apr 2023 12:07:46 +0100</pubDate>
+      
+      <guid>https://blog.ronan.lol/en/posts/crypto-avenir-ou-pas/</guid>
+      <description>TL;DR: YES.
+Introduction I first became interested in cryptocurrencies in the 2010s. At that time, Bitcoin was probably the only one, or at least the only one I knew of. I found it fascinating, but I couldn&amp;rsquo;t quite grasp what it was exactly. A kind of digital money? How does it work? Where is this money actually located? And is it really money? Can I convert Bitcoin into euros? And if so, how?</description>
+    </item>
+    
+    <item>
+      <title>My blog is back</title>
+      <link>https://blog.ronan.lol/en/posts/resurrection/</link>
+      <pubDate>Wed, 12 Apr 2023 11:44:01 +0100</pubDate>
+      
+      <guid>https://blog.ronan.lol/en/posts/resurrection/</guid>
+      <description>It&amp;rsquo;s been quite some time since my last article, and I must admit, my activity has been sparse. However, I&amp;rsquo;m determined to change that. This article serves as a personal reminder to encourage me to write more thought-provoking posts. There&amp;rsquo;s an abundance of topics to discuss, but unfortunately, I seldom allocate time for writing.
+So, today marks the beginning of a new chapter. From now on, I will strive to write at least one post per week.</description>
+    </item>
+    
+    <item>
+      <title>Why do we all have to leave Whatsapp?</title>
+      <link>https://blog.ronan.lol/en/posts/pourquoi-whatsapp/</link>
+      <pubDate>Sun, 24 Jan 2021 18:00:00 +0200</pubDate>
+      
+      <guid>https://blog.ronan.lol/en/posts/pourquoi-whatsapp/</guid>
+      <description>Everyone, or almost everyone, knows Whatsapp. In just a few years, Facebook messaging has become the must-have. And it must be said that everyone was happy with it.
+Perfect messaging app, perfect timing Whatsapp was born from an idea of a young Ukrainian developer: to prevent the Soviet authorities from being able to read his parents&#39; SMS exchanges, he invented an application almost similar to SMS but encrypted. Similar to SMS because his idea was to simply use the phone number to communicate with his friends, in the same way as an SMS.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://blog.ronan.lol/en/about/</link>
+      <pubDate>Fri, 28 Aug 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://blog.ronan.lol/en/about/</guid>
+      <description>Hello !</description>
+    </item>
+    
+    <item>
+      <title>Setting up your container server - Part 1</title>
+      <link>https://blog.ronan.lol/en/posts/own-docker-server-part1/</link>
+      <pubDate>Thu, 27 Aug 2020 14:15:39 +0200</pubDate>
+      
+      <guid>https://blog.ronan.lol/en/posts/own-docker-server-part1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;img/shipping-containers.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Today, it is quite possible to consume the internet passively and get just about any service you want without a tinker. A blog on blogger.com, a cheap website at ovh, a cloud service on google drive and even your own web applications. But if you&amp;rsquo;re like me and like to host everything by yourself, I&amp;rsquo;ll show you, step by step and in a detailed way, how to set up your own multi-function swiss army knife server in a few steps.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

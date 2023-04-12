@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>containerr server on code :: sys :: hard :: gaming</title>
+    <link>https://blog.ronan.lol/en/tags/containerr-server/</link>
+    <description>Recent content in containerr server on code :: sys :: hard :: gaming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> - Ronan Lamour</copyright>
+    <lastBuildDate>Thu, 27 Aug 2020 14:15:39 +0200</lastBuildDate><atom:link href="https://blog.ronan.lol/en/tags/containerr-server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up your container server - Part 1</title>
+      <link>https://blog.ronan.lol/en/posts/own-docker-server-part1/</link>
+      <pubDate>Thu, 27 Aug 2020 14:15:39 +0200</pubDate>
+      
+      <guid>https://blog.ronan.lol/en/posts/own-docker-server-part1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;img/shipping-containers.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Today, it is quite possible to consume the internet passively and get just about any service you want without a tinker. A blog on blogger.com, a cheap website at ovh, a cloud service on google drive and even your own web applications. But if you&amp;rsquo;re like me and like to host everything by yourself, I&amp;rsquo;ll show you, step by step and in a detailed way, how to set up your own multi-function swiss army knife server in a few steps.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

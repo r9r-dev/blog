@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code :: sys :: hard :: gaming</title>
+    <link>https://blog.ronan.lol/</link>
+    <description>Recent content on code :: sys :: hard :: gaming</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright> - Ronan Lamour</copyright>
+    <lastBuildDate>Wed, 12 Apr 2023 16:00:59 +0200</lastBuildDate><atom:link href="https://blog.ronan.lol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Un point sur mes anciens articles</title>
+      <link>https://blog.ronan.lol/posts/mes-anciens-articles/</link>
+      <pubDate>Wed, 12 Apr 2023 16:00:59 +0200</pubDate>
+      
+      <guid>https://blog.ronan.lol/posts/mes-anciens-articles/</guid>
+      <description>C&amp;rsquo;est assez marrant de relire mes anciens articles de blogs. Certains peuvent parfois veillir bien plus vite que les autres.
+Trois Articles Il ne reste que 3 articles sur mon blog. Ça fait moins d&amp;rsquo;un article par an. J&amp;rsquo;avais rédigé d&amp;rsquo;autres articles mais tous en brouillon, c&amp;rsquo;est assez afligeant.
+Les Articles Monter son serveur de conteneurs Docker Le premier article, en 2020. En fait, c&amp;rsquo;est une reprise de mon repo github que j&amp;rsquo;ai remis à jour récement.</description>
+    </item>
+    
+    <item>
+      <title>Nan mais la crypto c&#39;est l&#39;avenir ou pas ?</title>
+      <link>https://blog.ronan.lol/posts/crypto-avenir-ou-pas/</link>
+      <pubDate>Wed, 12 Apr 2023 12:07:46 +0100</pubDate>
+      
+      <guid>https://blog.ronan.lol/posts/crypto-avenir-ou-pas/</guid>
+      <description>TL;DR: OUI.
+Introduction J&amp;rsquo;ai commencé à m&amp;rsquo;intéresser aux crypto monnaies dans les années 2010. À l&amp;rsquo;époque, il n&amp;rsquo;y avait probablement que le Bitcoin. En tout cas, c&amp;rsquo;est la seule cryptomonnaie que je connaissais. Je trouvais ça déjà très fascinant, mais surtout je n&amp;rsquo;arrivais pas à comprendre ce que c&amp;rsquo;était exactement. Une sorte d&amp;rsquo;argent numérique ? Comment ça fonctionne ? Et où est cet argent réellement ? Et puis est-ce vraiment de l&amp;rsquo;argent ?</description>
+    </item>
+    
+    <item>
+      <title>Mon blog de retour ?</title>
+      <link>https://blog.ronan.lol/posts/resurrection/</link>
+      <pubDate>Wed, 12 Apr 2023 11:44:01 +0100</pubDate>
+      
+      <guid>https://blog.ronan.lol/posts/resurrection/</guid>
+      <description>Cela fait un certain temps que je n&amp;rsquo;ai pas écrit d&amp;rsquo;article, et je dois admettre que mon activité a été limitée. Cependant, je suis déterminé à changer cela. Cet article me sert de rappel personnel pour m&amp;rsquo;encourager à rédiger des articles plus stimulants. Les sujets de discussion ne manquent pas, mais malheureusement, je consacre rarement du temps à l&amp;rsquo;écriture.
+Aujourd&amp;rsquo;hui marque donc le début d&amp;rsquo;un nouveau chapitre. À partir de maintenant, je m&amp;rsquo;efforcerai d&amp;rsquo;écrire au moins un article par semaine.</description>
+    </item>
+    
+    <item>
+      <title>Ultra, plateforme Gaming du futur</title>
+      <link>https://blog.ronan.lol/posts/ultra-is-life/</link>
+      <pubDate>Sun, 07 Mar 2021 23:38:39 +0100</pubDate>
+      
+      <guid>https://blog.ronan.lol/posts/ultra-is-life/</guid>
+      <description>Si vous ne connaissez pas Ultra, je suppose que vous êtes entrain de vous dire que j&amp;rsquo;ai fumé quelque chose de puissant pour oser vous dire qu&amp;rsquo;une plateforme Gaming va sans doute bientôt faire concurrence à Steam et que c&amp;rsquo;est très sérieux. Vous me diriez que d&amp;rsquo;autres sont déjà passé par là et qu&amp;rsquo;ils se sont soit cassé les dents, soit n&amp;rsquo;ont jamais décollé.
+Vous avez sans doute raison de me prendre pour un fou mais s&amp;rsquo;il vous plait, lisez tout de même ce que j&amp;rsquo;ai à vous dire car avec Ultra, je crois qu&amp;rsquo;on est juste pas prêts.</description>
+    </item>
+    
+    <item>
+      <title>Pourquoi devons-nous tous quitter Whatsapp ?</title>
+      <link>https://blog.ronan.lol/posts/pourquoi-whatsapp/</link>
+      <pubDate>Sun, 24 Jan 2021 18:00:00 +0200</pubDate>
+      
+      <guid>https://blog.ronan.lol/posts/pourquoi-whatsapp/</guid>
+      <description>Tout le monde, ou presque, connait Whatsapp. En quelques années, la messagerie de Facebook est devenue l’incontournable. Et il faut avouer que cette messagerie contentait tout le monde.
+Messagerie parfaite, moment parfait Whatsapp est né d’une idée d’un jeune développeur Ukrainien : pour éviter que les autorités soviétiques ne puissent lire les échanges de SMS de ses parents, il invente une application quasi-similaire aux SMS mais chiffrée. Similaire aux SMS car son idée était de n’avoir qu’à utiliser le numéro de téléphone pour communiquer avec ses correspondants, de la même manière que pour un SMS.</description>
+    </item>
+    
+    <item>
+      <title>A propos</title>
+      <link>https://blog.ronan.lol/about/</link>
+      <pubDate>Fri, 28 Aug 2020 09:00:00 +0200</pubDate>
+      
+      <guid>https://blog.ronan.lol/about/</guid>
+      <description>Bonjour !</description>
+    </item>
+    
+    <item>
+      <title>Monter son serveur de conteneurs Docker - Partie 1</title>
+      <link>https://blog.ronan.lol/posts/own-docker-server-part1/</link>
+      <pubDate>Thu, 27 Aug 2020 14:15:39 +0200</pubDate>
+      
+      <guid>https://blog.ronan.lol/posts/own-docker-server-part1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;img/shipping-containers.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Aujourd&amp;rsquo;hui, il est tout à fait possible de consommer internet de manière passive et d&amp;rsquo;obtenir à peu près tous les services que l&amp;rsquo;on souhaite sans bidouille. Un blog sur blogger.com, un site web pour pas trop cher chez ovh, un service de cloud sur google drive et même ses propres applications web. Mais si vous êtes comme moi et aimez vouloir héberger tout par vous même, je vais vous présenter, pas à pas et de manière détaillée, comment monter votre propre serveur couteau-suisse multi-fonctions en quelques étapes.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

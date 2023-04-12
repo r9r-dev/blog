@@ -1,29 +1,29 @@
 ---
-title: "Nan mais la crypto c'est l'avenir ou pas ?"
-date: 2023-02-13T12:07:46+01:00
+title: "But is crypto the future or not?"
+date: 2023-04-12T12:07:46+01:00
 category: Crypto
 tags: ["crypto", "blockchain", "nft", "defi"]
 ---
 
-TL;DR: Oui.
+TL;DR: YES.
 
 ## Introduction
 
-I first became interested in crypto currencies in the 2010s. At the time, there was probably only Bitcoin. In any case, it was the only crypto currency I knew about. I already found it very fascinating, but mostly I couldn't figure out what it was exactly. A kind of digital money? How does it work? And where is this money really? And is it really money? Can I convert Bitcoin into euros? And if so, how?
+I first became interested in cryptocurrencies in the 2010s. At that time, Bitcoin was probably the only one, or at least the only one I knew of. I found it fascinating, but I couldn't quite grasp what it was exactly. A kind of digital money? How does it work? Where is this money actually located? And is it really money? Can I convert Bitcoin into euros? And if so, how?
 
-10 years have passed. For 10 years, I've seen all this from afar without really being interested in it. Just like Mr. Everyman, I first thought of something that doesn't really exist, that consumes electricity and that, in short, serves no other purpose. Then, a few months ago, I started to get more interested in it. So I started looking for concrete answers to these questions. I started by reading articles on the subject. I read articles about Bitcoin, about other cryptocurrencies, about blockchains, about wallets, about exchanges, about ICOs, about masternodes, about forks, etc. I spent more than a few hours reading them. I used to spend more than an hour a day in the beginning.
+Ten years have passed. For a decade, I observed this world from afar without diving in too deep. Like many others, I initially thought it didn't really exist, consumed electricity, and served no other purpose. However, a few months ago, I started looking into it more closely. I sought concrete answers to my questions and read numerous articles on Bitcoin, other cryptocurrencies, blockchains, wallets, exchanges, ICOs, masternodes, forks, and more. I spent over an hour a day at the beginning.
 
-I bought crypto currencies first on centralized platforms like a classic bank would. I then used protocols directly on which I traded in euros to cryptocurrency. I bought and sold NFTs. I used decentralized exchangers, I made loans, I even used futures contracts that I didn't even know about in traditional finance. I've done what are called bridges, which are transfer operations from one blockchain to another. I've made a few attempts to develop directly on the blockchain, to better understand smarts contracts.
+I bought cryptocurrencies first on centralized platforms, similar to traditional banks. Later, I used protocols directly to exchange euros for cryptocurrencies. I bought and sold NFTs, used decentralized exchanges, took out loans, and even dabbled in futures contracts that I didn't know existed in traditional finance. I performed what are called bridges, transferring assets from one blockchain to another. I also attempted some development directly on the blockchain to better understand smart contracts.
 
-As I write this, my main Wallet contains 2673 transactions, made in less than a year. On my bank account and over the same period, I would say that I must have between 200 and 300 transactions. So I have done more transactions in one year on blockchains than I have done in 10 years in traditional finance.
+As of writing, my main wallet contains 2,673 transactions made in less than a year. In comparison, my bank account has between 200 and 300 transactions during the same period. In just one year on blockchains, I've conducted more transactions than I have in a decade within traditional finance.
 
-So, today, I think I can concretely say if the crypto-currency is useful or not. If it's completely bullshit, if it just consumes electricity. And if, in short, traditional finance has absolutely nothing to fear.
+So, today, I believe I can confidently say whether cryptocurrencies serve a purpose or not. If they're complete nonsense, if they do nothing but consume electricity, and if traditional finance has nothing to fear.
 
 ## Cryptocurrency
 
-I don't like to talk about cryptocurrency. To me, it's just money. I guess some people would freak out reading this. Most likely because for a currency to qualify as a currency, it has to be recognized by a country or central bank. Only for the small consumer that I am, I see no difference. I would even say that on the blockchain, everything is so much simpler. On blockchain I don't have a bank. The concept of a bank simply does not exist. There are only account-to-account, wallet-to-wallet exchanges. Moreover, everything happens almost instantaneously. So, admittedly, today, there are quite few links between cryptocurrency and the real world, So much so that I can't go buy a loaf of bread with cryptocurrency. But anything I can buy on the blockchain in today's purely technological world, I can do using my wallet and not a bank.
+I don't like talking about cryptocurrency. To me, it's just money. Some people might be alarmed to read this, likely because for a currency to be considered money, it must be recognized by a country or central bank. However, as an everyday consumer, I see no difference. In fact, I find everything much simpler on the blockchain. On the blockchain, I don't have a bank. The concept of a bank simply doesn't exist. There are only exchanges from wallet to wallet. Moreover, transactions occur almost instantly. While there are currently few links between cryptocurrency and the real world (I can't buy a loaf of bread with cryptocurrency, for example), everything I can buy on the blockchain in today's purely technological world can be done using my wallet, not a bank.
 
-If you don't know anything about it, imagine a world where banks don't exist.Imagine that in your wallet, you have all your money. All of it. It's as if when you open your wallet, you see all the money you have, but also all the loans you owe, the things you owe someone else. So instead of having a bank, a place where you go to get your money, it's a physical object that has everything in it. And that makes it a lot easier. And that's what makes all the difference and makes things so much simpler. In a totally blockchain world, there's no more Paypal, there's no more Lydia, there's no more restaurant vouchers. There are probably even no more bank cards. There are only people exchanging goods, without intermediaries.
+If you're not familiar with the concept, imagine a world without banks. Imagine that in your wallet, you have all your money—every cent. When you open your wallet, you see the entirety of your funds, as well as any loans or debts you owe to others. In essence, instead of having a bank, a place where you go to access your money, it's all in a physical object. And that greatly simplifies things. This is what sets the blockchain apart and makes everything much easier. In a completely blockchain-based world, there's no need for Paypal, Lydia, or meal vouchers. There likely wouldn't even be credit cards. There would only be people exchanging goods without intermediaries.
 
 ## DeFi
 

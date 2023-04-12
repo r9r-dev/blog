@@ -1,10 +1,10 @@
 ---
-title: "My blog is back"
-date: 2023-02-13T11:44:01+01:00
+title: "Mon blog de retour ?"
+date: 2023-04-12T11:44:01+01:00
 category: Blog
-tags: ["blog", "r9r"]
+tags: ["blog", "ronan"]
 ---
 
-Well, it's been a while since I published an article here. In fact, you can't say I've been very active. We'll try to change that. I'm writing this article for myself to convince myself to try again to write some mood posts here
+Cela fait un certain temps que je n'ai pas écrit d'article, et je dois admettre que mon activité a été limitée. Cependant, je suis déterminé à changer cela. Cet article me sert de rappel personnel pour m'encourager à rédiger des articles plus stimulants. Les sujets de discussion ne manquent pas, mais malheureusement, je consacre rarement du temps à l'écriture.
 
-Well, it's been a while since I've published any articles here, and I can't say that I've been very active, so we'll try to change that. I'm writing this article for myself to convince myself to try again to write some mood posts here. I have a lot of things to tell but unfortunately I never take the time to write them. So this article is the first day of the rest of my life. Starting today, I'm going to try to force myself to write one post a week. And if I can't do that, too bad. I will close this blog in 2023.
+Aujourd'hui marque donc le début d'un nouveau chapitre. À partir de maintenant, je m'efforcerai d'écrire au moins un article par semaine. Si je ne parviens pas à tenir cet engagement, je fermerai ce blog en 2023. Let's go
